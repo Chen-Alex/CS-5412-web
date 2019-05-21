@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Taxi Pickup Frequencies by Region </title>
+  </head>
+  <body>
+    <h1> <center> Taxi Pickup Frequencies by Region </center> </h1>
+    <center>
+    <form id="selector" onsubmit="return false;">
+        <input type="datetime-local" id="datetime">
+        <select id="type">
+          <option value="Predicted"> Predicted </option>
+          <option value="Actual"> Actual </option>
+        </select>
+        <input type="submit" id="submitbutton" onclick="process();"> 
+    </form>
+    </center>
+    <br/> <br/>
+    <center>
+      <canvas id="canvas" width="800" height="800">
+      </canvas>
+    </center>
+    <img id = "map" src="map.png" style="display:none">
+  </body>
+  <script src="client.js"> </script>
+</html>
